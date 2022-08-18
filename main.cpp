@@ -1,19 +1,25 @@
 #include <iostream>
+#include "lists.cpp"
+#include "functions.cpp"
 using namespace std;
+using namespace list;
+using namespace functions;
 
 int main() {
     bool loop = true;
     string s;
 
 
-    cout << "hello cunt!\n";
+    cout << "hello From randGen!\n";
 
     while(loop) {
         
         cin >> s;
 
-        if (s == "poop") {
-            cout << "pee";
+        if (s == "rand") {
+            cout << random(color);
+        } else {
+            cout << "not what it needs to be\n";
         }
     }
 
